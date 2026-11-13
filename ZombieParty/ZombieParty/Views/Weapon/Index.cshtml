@@ -76,3 +76,23 @@
         }
     </tbody>
 </table>
+
+@section Scripts{
+<script>
+
+        $("tr.WeaponList").on("mouseenter", function() {
+            console.log("mouseenter")
+            $(this).addClass("highlight");
+            $(this).css("border", "50px solid red");
+
+        });
+
+        $("tr.WeaponList").on("mouseleave", function() {
+
+            $(this).removeClass("highlight");
+            $(this).css("border", "");
+
+        });
+
+</script>
+}

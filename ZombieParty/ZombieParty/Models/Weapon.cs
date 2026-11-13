@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.CodeAnalysis.Scripting;
 
 namespace ZombieParty.Models
 {
@@ -46,5 +47,7 @@ namespace ZombieParty.Models
             if (item.Description.Split(" ").Length <= 3)
                 yield return new ValidationResult("Description needs to have more than 3 words please.", new[] { "Description" });
         }
+
+        
     }
 }
